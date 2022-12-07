@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #c3f5ff;
+}
+#btn{
+    padding: 10px 30px;
+    font-size: 34px;
+    color: #Fff;
+    font-weight: bold;
+    border-radius: 10px;
+    outline: none;
+    background: #b1b2ff;
+    border: 2px solid #b1b2ff;
+}
+#btn:hover{
+    animation: effect .7s infinite;
+    background: linear-gradient(#8d98e3 40%, #854fee 60%);
+}
+@keyframes effect {
+    0%{
+        transform: translateX(0px) rotate(0deg);
+    }
+    20%{
+        transform: translateX(-8px) rotate(-8deg);
+    }
+    40%{
+        transform: translateX(-8px) rotate(-8deg);
+    }
+    60%{
+        transform: translateX(8px) rotate(8deg);
+    }
+    80%{
+        transform: translateX(4px) rotate(4deg);
+    }
+    100%{
+        transform: translateX(0px) rotate(0deg);
+    }
+}
